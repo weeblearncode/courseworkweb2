@@ -1,3 +1,4 @@
+// server/api/models/vocabModel.js
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
@@ -10,6 +11,10 @@ const VocabSchema = new Schema(
     german: {
       type: String,
       required: 'German word cannot be blank'
+    },
+    japanese: { 
+      type: String,
+      required: 'Japanese word cannot be blank'
     }
   },
   { collection: 'vocab' }
