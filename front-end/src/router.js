@@ -5,6 +5,7 @@ import New from './views/New.vue';
 import Show from './views/Show.vue';
 import Edit from './views/Edit.vue';
 import Test from './views/Test.vue';
+import DailyReview from './views/DailyReview.vue';
 
 Vue.use(Router);
 
@@ -42,5 +43,10 @@ export default new Router({
       name: 'test',
       component: Test
     },
+    {
+      path: '/daily-review',  // Add this new route
+      name: 'daily-review',
+      component: DailyReview
+    }
   ],
 });

@@ -15,6 +15,13 @@
       <input type="text" readonly v-model="word.english" />
     </div>
 
+        <div class="ui labeled input fluid">
+      <div class="ui label">
+        <i class="japan flag"></i> Japanese
+      </div>
+      <input type="text" readonly v-model="word.japanese" />
+    </div>
+
     <router-link :to="{ name: 'edit', params: { id: word._id }}" class="ui button">
       Edit word
     </router-link>
